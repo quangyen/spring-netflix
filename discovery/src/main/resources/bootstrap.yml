@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: discovery
+  cloud:
+    config:
+      uri: http://pc-space1.ddns.net:8081
+      username: sa
+      password: sa
+      fail-fast: true
+      override-none: false
+      override-system-properties: false
+  profiles:
+    active: default

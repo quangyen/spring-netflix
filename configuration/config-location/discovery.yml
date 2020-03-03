@@ -1,0 +1,11 @@
+server:
+  port: 8082
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://pc-space1.ddns.net:8082/eureka
+    fetch-registry: false
+    register-with-eureka: true
+  instance:
+    prefer-ip-address: true

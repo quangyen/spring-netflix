@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: zuul
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: configuration
+      username: sa
+      password: sa
+      fail-fast: true
+      override-none: false
+      override-system-properties: false
+  profiles:
+    active: default
+eureka:
+  client:
+    service-url:
+      defaultZone: http://pc-space1.ddns.net:8082/eureka
+      registry-fetch-interval-seconds: 5
+  instance:
+    prefer-ip-address: true

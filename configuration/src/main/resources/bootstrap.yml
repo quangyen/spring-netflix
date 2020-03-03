@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: configuration
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:/home/quangyen/Downloads/spring-netflix/configuration/config-location
+        bootstrap: true
+      override-none: false
+      override-system-properties: false
+  profiles:
+    active: native
